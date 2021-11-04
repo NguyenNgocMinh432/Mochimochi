@@ -24,7 +24,6 @@ a{
 }
 .header__top{
     display: flex;
-    justify-content: space-between;
     align-items:center;
     
 }
@@ -47,6 +46,8 @@ a{
     font-weight: bold;
     text-align: left;
     line-height: 1.6;
+    margin-left: 11%;
+    padding-top:1%;
 }
 .content__top{
     width: 100%;
@@ -61,10 +62,14 @@ a{
     margin-left: 0px;
 } */
 .content__top--right{
-    margin-left: 50px;
-    width: 460px;
+    margin-left: 5%;
+    width: 48%;
+    max-width: 460px;
     height: 258px;
     
+}
+.content__right--top{
+    padding-top: 13px;
 }
 .content__right--top>h2{
     
@@ -106,7 +111,11 @@ a{
     position: absolute;
     left: 0;
 }
+.content__top--videos{
+    padding-top: 52px;
+}
 .btn{
+    font-family: 'Quicksand', sans-serif;
     width: 201px;
     height: 43px;
     color: rgb(255, 255, 255);
@@ -137,7 +146,7 @@ a{
     
 }
 .content__second--left{
-    width: 359px;
+    width: 36%;
 }
 .content__second--text{
     color: rgb(255, 255, 255);
@@ -145,14 +154,24 @@ a{
     font-weight: bold;
     text-align: left;
     line-height: 1.4;
-    padding-top: 30px;
+    padding-top: 48px;
     
 }
 .content__second--text>span>i{
+    position:absolute;
     font-size:30px;
     color:yellow;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left: 20px;
+    animation: scale 1s linear infinite;
+}
+@keyframes scale {
+    to{
+        font-size: 30px;
+    }
+    from{
+        font-size:35px;
+    }
 }
 .content__second--text-below{
     margin-top:17px;
@@ -167,7 +186,7 @@ a{
 }
 
 .content__second--box{
-    width: 415px;
+    width: 81%;
     height: 145px;
     background-color: rgb(255, 255, 255);
     border-style: solid;
@@ -175,10 +194,10 @@ a{
     border-width: 1px;
     border-radius: 15px;
     margin-top: 61px;
-    margin-left: 156px;
+    margin-left: 165px;
 }
 .box__content {
-    width: 347px;
+    width: 350px;
     height: 86px;
     color: rgb(0, 0, 0);
     font-size: 18px;
@@ -190,6 +209,7 @@ a{
 .box__content>span {
     font-weight: bold;
     color: rgb(39, 172, 56);
+    line-height: 1.6;
 }
 .review{
     height: 371.6px;
@@ -199,7 +219,7 @@ a{
     display: flex;
 }
 .review__top--left{
-    width: 427px;
+    width: 44%;
     padding-top: 60px;
 }
 .title__left {
@@ -233,7 +253,7 @@ a{
 }
 .review__top--right{
     margin-top:65px;
-    width: 440px;
+    width: 45%;
     height: 247px;
     
     margin-left: 87px;
@@ -243,7 +263,8 @@ a{
     height: 255px;
     background-color: rgb(39, 172, 56);
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 2;
+    margin-top: 120px;
 }
 .footer__box{
     display: flex;
@@ -257,10 +278,13 @@ a{
     font-weight: bold;
     color:#fff;
 }
+.footer__left >a> span {
+    margin-left: 20px;
+}
 .review__top--right--rotate{
     transform: rotate(78deg);
     margin-top:5%;
-    
+    margin-left: -5%;
 }
 .review__top--left--rotate{
     width: 427px;
@@ -273,8 +297,85 @@ a{
     width: 100%;
     z-index: 100;
 }
-.link__fb{
-    width: 435px;
+.link__group{
+    position: absolute;
+    left:18.4%;
+    width: 363px;
     height: 273px;
-    background-color: red;
+    background-color: white;
+    border: 1px solid #dadde1;
+    border-radius: 3px;
+    box-sizing: border-box;
+   
+}
+.link__group>a>img{
+    width: 363px;
+    height: 171px;
+}
+.link__group>a>h5{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    font-family:Helvetica, Arial, sans-serif;
+    padding-top: 1%;
+}
+.link__group>p{
+    color: #90949c;
+    font-size: 12px;
+    text-align: center;
+    margin: 2px 12px 0px 12px;
+}
+.link__group>a>button{
+   
+    width: 341px;
+    height: 27px;
+    font-size: 12px;
+    line-height: 26px;
+    background-color: #4267b2;
+    border-color: #4267b2;
+    margin:8px 12px 12px 12px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    border:none;
+    cursor: pointer;
+}
+.link__group>a>button>i{
+    font-size: 18px;
+    display:inline-block;
+    height: 16px;
+    width: 16px;
+    margin-top: 6px;
+    margin-left:-85px;
+    margin-right: 4px;
+}
+.link__group>a>button>span{
+    position: absolute;
+    font-weight: bold;
+    margin-top: 1px;
+}
+.link__group>a:hover{
+    text-decoration: underline;
+}
+#title__easy{
+    padding-top: 4%;
+}
+#review__below{
+    margin-left: 15%;
+    
+}
+.bold{
+    font-weight: bold;
+}
+@media only screen and (max-width: 1024px){
+    .link__group{
+        left:2.4%;
+    }
+}
+@media only screen and (min-width:1920px){
+    .link__group{
+        left: 25.4%;
+    }
 }
