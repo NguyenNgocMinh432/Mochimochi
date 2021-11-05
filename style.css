@@ -278,8 +278,14 @@ a{
     font-weight: bold;
     color:#fff;
 }
-.footer__left >a> span {
+.footer__left >a span {
     margin-left: 20px;
+}
+.block {
+    display: inline-block;
+}
+.margin{
+    margin-left:20px;
 }
 .review__top--right--rotate{
     transform: rotate(78deg);
