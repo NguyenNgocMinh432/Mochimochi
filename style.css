@@ -161,13 +161,13 @@ a{
     position:absolute;
     font-size:30px;
     color:yellow;
-    padding-top: 10px;
+    padding-top: 7px;
     padding-left: 20px;
     animation: scale 1s linear infinite;
 }
 @keyframes scale {
     to{
-        font-size: 30px;
+        font-size: 32px;
     }
     from{
         font-size:35px;
